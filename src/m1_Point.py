@@ -18,8 +18,8 @@ def main():
     #run_test_get_distance_from()
     #run_test_get_distance_from_start()
     run_test_get_distance_traveled()
-    run_test_closer_to()
-    run_test_halfway_to()
+    ##run_test_closer_to()
+    #run_test_halfway_to()
 
 ###############################################################################
 # IMPORTANT:
@@ -90,7 +90,10 @@ class Point(object):
             return p3
 
     def halfway_to(self, p2):
-        pass
+        px = ((self.x + p2.x) / 2)
+        py = ((self.y + p2.y) / 2)
+        g = Point(px, py)
+        return g
 
 def run_test_init():
     """
